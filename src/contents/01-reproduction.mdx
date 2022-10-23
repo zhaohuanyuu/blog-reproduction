@@ -1,0 +1,51 @@
+---
+title: "reproduction article"
+keywords: "mdx, reproduction"
+date: "2021-05-26"
+category: "note"
+draft: false
+path: "/post/reproduction"
+---
+
+
+this is a reproduction mdx
+
+
+> these are some test text
+
+### code block test
+
+```javascript
+import { css as transformStyleObject } from '@index-ui/css'
+import { css as createClassName } from '@emotion/css'
+
+const root = document.getElementById('root')
+
+/** @type {import("@index-ui/css").Theme} */
+const index = {
+  colors: {
+    text: '#222',
+  },
+  fonts: {
+    mono: 'monospace',
+  },
+  space: {
+    sm: '1rem',
+    md: '2rem',
+  },
+}
+
+const styles = transformStyleObject({
+  padding: ['sm', 'md'],
+  border: ({ colors }) => `2px solid ${colors.text}`,
+  h1: {
+    fontFamily: 'mono',
+    color: 'text',
+  },
+})(index)
+
+root.classList.add(createClassName(styles))
+root.innerHTML = `
+<h1>You can use <code>@index-ui/css</code> in Vanilla JS!</h1>
+`
+```

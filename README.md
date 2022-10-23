@@ -1,2 +1,7 @@
-# blog-reproduction
-my blog reproduction
+# blog
+
+> my blog base on gatsby
+
+* npm install | pnpm install
+* npm start | pnpm start
+

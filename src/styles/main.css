@@ -1,0 +1,10 @@
+/*tailwind default*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/*custom styles*/
+@import "./custom/reset.css";
+@import "./custom/theme.css";
+@import "./custom/components.css";
+@import "./custom/utilities.css";
